@@ -1,0 +1,37 @@
+<div mat-dialog-content>
+  <h1>Crea nueva Noticia</h1>
+</div>
+
+<form
+  class="example-form"
+  style="text-align: center"
+  [formGroup]="signupForm"
+  (ngSubmit)="enviarForm(signupForm.value)"
+>
+  <mat-form-field
+    class="example-full-width"
+    appearance="fill"
+    style="padding-right: 5%"
+  >
+    <mat-label>Titulo</mat-label>
+    <input formControlName="title" matInput />
+    <mat-error>Titulo es un parametro requerido</mat-error>
+  </mat-form-field>
+
+  <mat-form-field
+    class="example-full-width"
+    appearance="fill"
+    style="padding-right: 5%"
+  >
+    <mat-label>URL imagen</mat-label>
+    <input formControlName="image" matInput />
+    <mat-error>URL imagen es un parametro requerido</mat-error>
+  </mat-form-field>
+  
+  <div mat-dialog-actions>
+    <button mat-button type="submit" [disabled]="signupForm.invalid">
+      Crear Noticia
+    </button>
+    <button mat-button [mat-dialog-close]="true">Cerrar</button>
+  </div>
+</form>

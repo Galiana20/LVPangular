@@ -1,0 +1,27 @@
+<div fxFlex fxLayout="column" fxLayoutGap="10px">
+  <div fxLayout="row wrap">
+    <div
+      *ngFor="let noticia of noticias"
+      fxFlex="33"
+      fxFlex.md="50"
+      fxFlex.sm="100"
+      fxFlex.xs="100"
+      fxLayout="column"
+      style="padding: 5px"
+    >
+      <mat-card class="example-card margin">
+        <img
+          mat-card-image
+          src="{{ noticia.image }}"
+          alt="Photo of a Shiba Inu"
+        />
+        <mat-card-content style="min-height: 5rem">
+          <h1>{{ noticia.title }}</h1>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div> 
+  <div class="center-content">
+    <app-form-contacto></app-form-contacto>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+}
+.card-picture {
+  width: 23%;
+  margin-bottom: 2%;
+}
+.container {
+  min-height: 100%;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.search-form {
+  width: 90%;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}

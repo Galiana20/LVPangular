@@ -1,0 +1,23 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+img {
+  max-width: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.titleNoticia {
+  font-size: 70px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.height{
+  height: 0vh;
+}
+
+@media(max-width: 960px) {
+  .height.mat-drawer-opened {
+    height: auto;
+  }
+}
+
